@@ -6,6 +6,18 @@ import { SiteFooter, SiteHeader } from '@/components/site-chrome';
 export const metadata: Metadata = {
   title: 'Kullanım Koşulları — OMA',
   description: 'OMA mobil uygulaması ve web sitesi için kullanım koşulları.',
+  openGraph: {
+    title: 'Kullanım Koşulları — OMA',
+    description: 'OMA mobil uygulaması ve web sitesi için kullanım koşulları.',
+    url: '/kullanim-kosullari',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'OMA — Bedeninin ritmini tanı' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kullanım Koşulları — OMA',
+    description: 'OMA mobil uygulaması ve web sitesi için kullanım koşulları.',
+    images: ['/og.png'],
+  },
 };
 
 const sections = [
