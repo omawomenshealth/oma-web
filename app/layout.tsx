@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-const siteUrl = 'https://oma-ritmini-tani.social-elk-3912.chatgpt.site';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://oma-ritmini-tani.social-elk-3912.chatgpt.site';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

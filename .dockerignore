@@ -1,0 +1,13 @@
+.git
+.gitignore
+.openai
+.next
+.vinext
+.wrangler
+dist
+node_modules
+npm-debug.log*
+.env*
+*.tgz
+deploy
+COMPUTE_ENGINE.md

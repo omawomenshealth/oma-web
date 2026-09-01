@@ -1,0 +1,21 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --build-arg=NEXT_PUBLIC_SITE_URL=${_SITE_URL}
+      - --tag=${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:latest
+      - --tag=${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:$BUILD_ID
+      - .
+
+images:
+  - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:latest
+  - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:$BUILD_ID
+
+substitutions:
+  _REGION: europe-west1
+  _REPOSITORY: oma
+  _IMAGE: web
+  _SITE_URL: https://oma-ritmini-tani.social-elk-3912.chatgpt.site
+
+options:
+  logging: CLOUD_LOGGING_ONLY
