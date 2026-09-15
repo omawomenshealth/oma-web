@@ -11,6 +11,7 @@
     "start": "wrangler dev --config dist/server/wrangler.json",
     "docker:dev": "next dev",
     "docker:build": "next build",
+    "build:static": "node scripts/build-static.mjs",
     "docker:start": "node .next/standalone/server.js",
     "lint": "oxlint",
     "format": "oxfmt"

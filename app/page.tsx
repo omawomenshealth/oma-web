@@ -57,16 +57,16 @@ export default function Home() {
         <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-[1440px] lg:grid-cols-[1.15fr_0.85fr]">
           <div className="flex flex-col justify-between px-5 pb-10 pt-16 sm:px-8 lg:px-12 lg:pb-12 lg:pt-20">
             <div>
-              <p className="mb-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-plum">
+              <p className="mb-8 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-plum">
                 <span className="h-px w-12 bg-plum" />
                 Döngü ve iyi yaşam günlüğü
               </p>
-              <h1 className="max-w-4xl font-heading text-[clamp(4.4rem,8.6vw,9rem)] leading-[0.78] tracking-[-0.07em]">
+              <h1 className="max-w-4xl font-heading text-[clamp(3.5rem,7.2vw,7rem)] leading-[1.08] tracking-[-0.025em]">
                 Bedeninin<br />
                 <span className="ml-[0.55em] italic text-plum">ritmini</span><br />
                 tanı.
               </h1>
-              <p className="mt-10 max-w-xl text-lg leading-8 text-ink/70 sm:text-xl">
+              <p className="mt-10 max-w-xl text-lg leading-8 text-ink/80 sm:text-xl">
                 OMA; döngünü, belirtilerini, ruh hâlini ve günlük alışkanlıklarını tek bir yerde görmene yardım eder. Yargılamadan, acele ettirmeden.
               </p>
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
                 Google Play’e git
                 <ArrowDownRight aria-hidden="true" />
               </a>
-              <span className="px-2 text-sm leading-6 text-ink/55">Mağaza yayını tamamlandığında açılır.<br />iPhone sürümü yakında.</span>
+              <span className="px-2 text-sm leading-6 text-ink/80">Mağaza yayını tamamlandığında açılır.<br />iPhone sürümü yakında.</span>
             </div>
           </div>
 
@@ -89,15 +89,15 @@ export default function Home() {
             <div className="absolute inset-0 opacity-25 mix-blend-multiply">
               <img src="/brand/oma-botanical.jpg" alt="" className="size-full object-cover" />
             </div>
-            <div className="relative flex h-full items-center justify-center">
-              <div className="absolute left-0 top-3 max-w-[15rem] border-l border-ink/25 pl-4 text-sm leading-6 text-ink/65">
+            <div className="relative flex h-full flex-col items-center justify-center gap-8">
+              <div className="self-start max-w-[20rem] border-l border-ink/25 pl-4 text-sm leading-6 text-ink/80">
                 <Sparkles className="mb-3 size-5" aria-hidden="true" />
-                Kendi kayıtlarından doğan, açıklanabilir kişisel içgörüler.
+                Döngün, günlük kayıtların ve hızlı erişimlerin aynı ana ekranda.
               </div>
-              <div className="relative mt-24 w-[min(72vw,330px)] rotate-[2.5deg] border-[9px] border-ink bg-ink p-1 shadow-[24px_26px_0_0_rgba(72,43,72,0.18)] sm:w-[330px]">
-                <img src="/brand/oma-insight.png" width="432" height="856" alt="OMA uygulamasında kişisel içgörü ekranı" className="h-auto w-full" />
+              <div className="relative w-[min(72vw,310px)] border-[9px] border-ink bg-ink p-1 shadow-[24px_26px_0_0_rgba(72,43,72,0.18)] sm:w-[310px]">
+                <img src="/brand/oma-home-current.png" width="430" height="932" alt="OMA uygulamasının güncel ana ekranı: döngü fazı ve hızlı kayıt seçenekleri" className="h-auto w-full" />
               </div>
-              <div className="absolute bottom-5 right-0 flex max-w-[14rem] items-start gap-3 border-t border-ink/25 pt-4 text-sm leading-6 text-ink/65">
+              <div className="flex w-full max-w-[20rem] self-end items-start gap-3 border-t border-ink/25 pt-4 text-sm leading-6 text-ink/80">
                 <LockKeyhole className="mt-1 size-5 shrink-0" aria-hidden="true" />
                 Sağlık kayıtların cihazında güçlü şifrelemeyle korunur.
               </div>
@@ -109,16 +109,16 @@ export default function Home() {
       <section className="border-b border-ink/10 bg-[#e9c6bf]" aria-labelledby="approach-title">
         <div className="mx-auto grid max-w-[1440px] lg:grid-cols-[0.7fr_1.3fr]">
           <div className="border-b border-ink/15 px-5 py-16 sm:px-8 lg:border-b-0 lg:border-r lg:px-12 lg:py-24">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-plum">OMA’nın yaklaşımı</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">OMA’nın yaklaşımı</p>
           </div>
           <div className="px-5 py-16 sm:px-8 lg:px-16 lg:py-24">
-            <h2 id="approach-title" className="max-w-4xl font-heading text-5xl leading-[0.95] tracking-[-0.045em] sm:text-7xl">
+            <h2 id="approach-title" className="max-w-4xl font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">
               Bir veri panosu değil.<br /><span className="italic">Kendine tuttuğun bir günlük.</span>
             </h2>
             <div className="mt-14 grid gap-8 border-t border-ink/20 pt-8 sm:grid-cols-3">
-              <p className="text-base leading-7 text-ink/70"><strong className="mb-3 block text-xs uppercase tracking-[0.16em] text-ink">01 · Kaydet</strong>Gününü, bedenini ve döngünü kendi ritminde not et.</p>
-              <p className="text-base leading-7 text-ink/70"><strong className="mb-3 block text-xs uppercase tracking-[0.16em] text-ink">02 · Fark et</strong>Kayıtların biriktikçe tekrar eden işaretleri görünür kıl.</p>
-              <p className="text-base leading-7 text-ink/70"><strong className="mb-3 block text-xs uppercase tracking-[0.16em] text-ink">03 · Hazırlan</strong>Takvim, hatırlatıcı ve raporlarla bir sonraki güne daha hazır ol.</p>
+              <p className="text-base leading-7 text-ink/80"><strong className="mb-3 block text-xs uppercase tracking-[0.16em] text-ink">01 · Kaydet</strong>Gününü, bedenini ve döngünü kendi ritminde not et.</p>
+              <p className="text-base leading-7 text-ink/80"><strong className="mb-3 block text-xs uppercase tracking-[0.16em] text-ink">02 · Fark et</strong>Kayıtların biriktikçe tekrar eden işaretleri görünür kıl.</p>
+              <p className="text-base leading-7 text-ink/80"><strong className="mb-3 block text-xs uppercase tracking-[0.16em] text-ink">03 · Hazırlan</strong>Takvim, hatırlatıcı ve raporlarla bir sonraki güne daha hazır ol.</p>
             </div>
           </div>
         </div>
@@ -128,9 +128,9 @@ export default function Home() {
         <div className="mx-auto grid max-w-[1440px] lg:grid-cols-[0.75fr_1.25fr]">
           <div className="border-b border-ink/10 px-5 py-16 sm:px-8 lg:border-b-0 lg:border-r lg:px-12 lg:py-24">
             <div className="lg:sticky lg:top-10">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-plum">Birlikte izlenince anlamlı</p>
-              <h2 className="mt-6 max-w-md font-heading text-6xl leading-[0.88] tracking-[-0.055em] sm:text-7xl">Beden,<br />tek bir <span className="italic text-plum">veriden</span><br />ibaret değil.</h2>
-              <p className="mt-8 max-w-sm text-lg leading-8 text-ink/60">OMA, günlük hayatın farklı parçalarını aynı yerde tutar; yorumlamak için önce bütünü görmene yardım eder.</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">Birlikte izlenince anlamlı</p>
+              <h2 className="mt-6 max-w-md font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">Beden,<br />tek bir <span className="italic text-plum">veriden</span><br />ibaret değil.</h2>
+              <p className="mt-8 max-w-sm text-lg leading-8 text-ink/80">OMA, günlük hayatın farklı parçalarını aynı yerde tutar; yorumlamak için önce bütünü görmene yardım eder.</p>
             </div>
           </div>
           <div>
@@ -141,7 +141,7 @@ export default function Home() {
                   <span className="font-heading text-3xl italic text-plum">{feature.no}</span>
                   <div>
                     <h3 className="font-heading text-4xl tracking-[-0.035em] sm:text-5xl">{feature.title}</h3>
-                    <p className="mt-4 max-w-2xl text-base leading-7 text-ink/62 sm:text-lg sm:leading-8">{feature.text}</p>
+                    <p className="mt-4 max-w-2xl text-base leading-7 text-ink/80 sm:text-lg sm:leading-8">{feature.text}</p>
                   </div>
                   <Icon className="size-7 text-plum sm:mt-2" strokeWidth={1.5} aria-hidden="true" />
                 </article>
@@ -151,24 +151,51 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="ekranlar" className="border-b border-ink/10 bg-[#f0eee6]" aria-labelledby="screens-title">
+        <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">Uygulamanın içinden</p>
+            <h2 id="screens-title" className="mt-5 font-heading text-5xl leading-[1.08] sm:text-7xl">OMA’ya <span className="italic text-plum">yakından bak.</span></h2>
+            <p className="mt-6 text-lg leading-8 text-ink/80">Gününe ana ekrandan göz at; döngü takviminde önündeki günleri birlikte gör.</p>
+          </div>
+          <div className="mx-auto mt-12 grid max-w-[820px] gap-12 sm:grid-cols-2 sm:gap-16">
+            {[
+              { image: 'oma-home-current.png', title: 'Günün tek bir yerde', text: 'Döngü fazını gör, beslenme ve belirti gibi günlük kayıtlarına hızlıca ulaş.', alt: 'OMA güncel ana ekranında döngü fazı ve hızlı kayıt alanı' },
+              { image: 'oma-calendar-current.png', title: 'Takvimde bütünü gör', text: 'Adet günlerini ve tahmini döngü aralıklarını aylar arasında takip et.', alt: 'OMA güncel döngü takviminde Eylül ve Ekim ayları' },
+            ].map((screen) => (
+              <figure key={screen.image} className="mx-auto w-full max-w-[340px]">
+                <a href={`/brand/${screen.image}`} target="_blank" rel="noreferrer" aria-label={`${screen.title} ekran görüntüsünü büyüt`} className="block rounded-[2rem] border-[7px] border-ink bg-ink p-1 shadow-xl transition-transform hover:-translate-y-1">
+                  <img src={`/brand/${screen.image}`} width="430" height="932" loading="lazy" alt={screen.alt} className="h-auto w-full rounded-[1.25rem]" />
+                </a>
+                <figcaption className="mt-7">
+                  <h3 className="font-heading text-3xl text-ink">{screen.title}</h3>
+                  <p className="mt-3 text-base leading-7 text-ink/80">{screen.text}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="mt-10 text-center text-sm leading-6 text-ink/70">Güncel uygulama ekranları, örnek verilerle gösterilmiştir. Büyütmek için görsellere dokunabilirsin.</p>
+        </div>
+      </section>
+
       <section className="relative overflow-hidden bg-plum text-white" aria-labelledby="insights-title">
         <div className="absolute inset-y-0 left-0 w-1/3 bg-[#5f3c60]" />
         <div className="relative mx-auto grid min-h-[830px] max-w-[1440px] gap-14 px-5 py-20 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:px-12 lg:py-24">
           <div className="flex flex-col justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sage">İçgörü, hüküm değil</p>
-              <h2 id="insights-title" className="mt-6 max-w-lg font-heading text-6xl leading-[0.88] tracking-[-0.055em] sm:text-7xl">Kayıtların sana <span className="italic text-[#e9c6bf]">geri konuşur.</span></h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sage">İçgörü, hüküm değil</p>
+              <h2 id="insights-title" className="mt-6 max-w-lg font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">Kayıtların sana <span className="italic text-[#e9c6bf]">geri konuşur.</span></h2>
             </div>
-            <div className="mt-10 max-w-md border-l border-white/30 pl-5 text-lg leading-8 text-white/70">
+            <div className="mt-10 max-w-md border-l border-white/30 pl-5 text-lg leading-8 text-white/90">
               <p>OMA içgörüleri tıbbi tanı değildir. Kayıtlarında birlikte görünen örüntüleri açıklar; endişelendiren veya süren değişikliklerde bir sağlık profesyoneline başvurmanı önerir.</p>
             </div>
           </div>
 
-          <div className="relative min-h-[630px]">
-            <div className="absolute left-0 top-20 w-[min(58vw,300px)] -rotate-[4deg] border-[8px] border-ink bg-ink p-1 shadow-[18px_22px_0_rgba(0,0,0,0.18)]">
+          <div className="grid grid-cols-1 items-start justify-items-center gap-8 sm:grid-cols-2 sm:gap-5">
+            <div className="w-full max-w-[300px] border-[8px] border-ink bg-ink p-1 shadow-[18px_22px_0_rgba(0,0,0,0.18)]">
               <img src="/brand/oma-insight-nutrition.png" width="432" height="856" alt="OMA uygulamasında beslenme içgörüsü" className="h-auto w-full" />
             </div>
-            <div className="absolute bottom-0 right-0 w-[min(58vw,300px)] rotate-[4deg] border-[8px] border-ink bg-ink p-1 shadow-[18px_22px_0_rgba(0,0,0,0.18)] sm:right-[8%]">
+            <div className="w-full max-w-[300px] sm:mt-16 border-[8px] border-ink bg-ink p-1 shadow-[18px_22px_0_rgba(0,0,0,0.18)]">
               <img src="/brand/oma-insight-cycle.png" width="432" height="856" alt="OMA uygulamasında döngü içgörüsü" className="h-auto w-full" />
             </div>
           </div>
@@ -177,16 +204,16 @@ export default function Home() {
 
       <section id="guvenlik" className="border-b border-ink/10 bg-sage">
         <div className="mx-auto grid max-w-[1440px] lg:grid-cols-2">
-          <div className="relative min-h-[520px] overflow-hidden border-b border-ink/15 p-5 sm:p-8 lg:min-h-[720px] lg:border-b-0 lg:border-r lg:p-12">
-            <img src="/brand/oma-botanical-gold.jpg" alt="Sarı çiçeklerden oluşan botanik kompozisyon" className="absolute inset-0 size-full object-cover opacity-75 mix-blend-multiply" />
-            <div className="relative flex h-full flex-col justify-between">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/65">Gizlilik, sonradan eklenen bir ayar değil</p>
-              <h2 className="mt-80 max-w-xl font-heading text-6xl leading-[0.86] tracking-[-0.06em] sm:text-8xl">Veri senin.<br /><span className="italic text-plum">Kontrol de.</span></h2>
+          <div className="relative min-h-[480px] overflow-hidden border-b border-ink/15 p-5 sm:p-8 lg:min-h-[720px] lg:border-b-0 lg:border-r lg:p-12">
+            <img src="/brand/oma-botanical-gold.jpg" alt="Sarı çiçeklerden oluşan botanik kompozisyon" className="absolute inset-0 size-full object-cover opacity-40 mix-blend-multiply" />
+            <div className="relative flex h-full flex-col justify-between gap-32">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-ink/80">Gizlilik, sonradan eklenen bir ayar değil</p>
+              <h2 className="mt-auto max-w-xl bg-paper/95 p-5 font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">Veri senin.<br /><span className="italic text-plum">Kontrol de.</span></h2>
             </div>
           </div>
           <div className="flex flex-col justify-center px-5 py-16 sm:px-8 lg:px-16 lg:py-24">
             <ShieldCheck className="size-10 text-plum" strokeWidth={1.5} aria-hidden="true" />
-            <p className="mt-7 max-w-xl text-xl leading-9 text-ink/70">Döngü, belirti, ilaç ve takviye kayıtları hassastır. OMA’nın veri akışı bu gerçeğin etrafında tasarlanır.</p>
+            <p className="mt-7 max-w-xl text-xl leading-9 text-ink/80">Döngü, belirti, ilaç ve takviye kayıtları hassastır. OMA’nın veri akışı bu gerçeğin etrafında tasarlanır.</p>
             <ul className="mt-10 border-t border-ink/20">
               {privacyItems.map((item) => (
                 <li key={item} className="flex gap-4 border-b border-ink/20 py-5 text-base leading-7">
@@ -195,7 +222,7 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <p className="mt-8 text-sm leading-6 text-ink/55">Bulut eşitlemesini kapattığında yerel kayıtların cihazında kalır. Rızanı geri çektiğinde buluttaki sağlık kayıtlarının silinmesini isteyebilirsin.</p>
+            <p className="mt-8 text-sm leading-6 text-ink/80">Bulut eşitlemesini kapattığında yerel kayıtların cihazında kalır. Rızanı geri çektiğinde buluttaki sağlık kayıtlarının silinmesini isteyebilirsin.</p>
           </div>
         </div>
       </section>
@@ -204,24 +231,24 @@ export default function Home() {
         <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
           <div className="grid items-end gap-12 border-y border-ink/20 py-12 lg:grid-cols-[1fr_auto]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-plum">OMA 1.0.5</p>
-              <h2 className="mt-5 max-w-4xl font-heading text-6xl leading-[0.9] tracking-[-0.055em] sm:text-8xl">Kendini dinlemek için<br /><span className="italic text-plum">bugün iyi bir gün.</span></h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">OMA 1.0.5</p>
+              <h2 className="mt-5 max-w-4xl font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">Kendini dinlemek için<br /><span className="italic text-plum">bugün iyi bir gün.</span></h2>
             </div>
-            <div className="flex min-w-[290px] flex-col gap-3">
+            <div className="flex min-w-0 flex-col gap-3">
               <a
                 href="https://play.google.com/store/apps/details?id=com.bps.oma"
                 target="_blank"
                 rel="noreferrer"
                 className={cn(buttonVariants({ variant: 'default' }), 'h-16 justify-between rounded-none bg-ink px-6 text-base text-paper hover:bg-plum')}
               >
-                <span><small className="block text-[0.65rem] uppercase tracking-[0.14em] text-paper/55">Android için</small>Google Play’e git</span>
+                <span><small className="block text-xs uppercase tracking-[0.14em] text-paper/80">Android için</small>Google Play’e git</span>
                 <ArrowDownRight className="size-5" aria-hidden="true" />
               </a>
-              <div className="flex h-16 items-center justify-between border border-ink/25 px-6 text-ink/45" aria-label="App Store sürümü yakında">
-                <span><small className="block text-[0.65rem] uppercase tracking-[0.14em]">iPhone için</small>App Store</span>
-                <span className="text-xs font-semibold uppercase tracking-[0.14em]">Yakında</span>
+              <div className="flex h-16 items-center justify-between border border-ink/25 px-6 text-ink/80" aria-label="App Store sürümü yakında">
+                <span><small className="block text-xs uppercase tracking-[0.14em]">iPhone için</small>App Store</span>
+                <span className="text-sm font-semibold uppercase tracking-[0.14em]">Yakında</span>
               </div>
-              <p className="mt-2 text-xs leading-5 text-ink/45">Google Play bağlantısı, uygulama mağazada yayınlandığında indirme sayfasını açar.</p>
+              <p className="mt-2 text-xs leading-5 text-ink/80">Google Play bağlantısı, uygulama mağazada yayınlandığında indirme sayfasını açar.</p>
             </div>
           </div>
         </div>

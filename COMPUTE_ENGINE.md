@@ -1,5 +1,8 @@
 # OMA web sitesini yerel Docker olmadan Compute Engine'e yayınlama
 
+> Bu ücretli VM alternatifi güncel yayın yöntemi değildir. Düşük maliyet için
+> Cloud Run üzerinde statik yayın kullanılır; `CLOUD_RUN.md` dosyasına bak.
+
 Bu akışta Docker imajı bilgisayarında değil, Google Cloud Build üzerinde oluşturulur. Bilgisayarında yalnızca `gcloud` komut satırı aracının çalışması yeterlidir.
 
 ## 1. Değişkenleri ayarla

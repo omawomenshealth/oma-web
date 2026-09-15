@@ -4,17 +4,17 @@ import { ArrowLeft, CircleAlert } from 'lucide-react';
 import { SiteFooter, SiteHeader } from '@/components/site-chrome';
 
 export const metadata: Metadata = {
-  title: 'Kullanım Koşulları — OMA',
+  title: 'Kullanım Koşulları · OMA',
   description: 'OMA mobil uygulaması ve web sitesi için kullanım koşulları.',
   openGraph: {
-    title: 'Kullanım Koşulları — OMA',
+    title: 'Kullanım Koşulları · OMA',
     description: 'OMA mobil uygulaması ve web sitesi için kullanım koşulları.',
     url: '/kullanim-kosullari',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'OMA — Bedeninin ritmini tanı' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'OMA · Bedeninin ritmini tanı' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kullanım Koşulları — OMA',
+    title: 'Kullanım Koşulları · OMA',
     description: 'OMA mobil uygulaması ve web sitesi için kullanım koşulları.',
     images: ['/og.png'],
   },
@@ -151,15 +151,15 @@ export default function TermsPage() {
 
       <section className="border-b border-ink/10 bg-[#e9c6bf]">
         <div className="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
-          <a href="/" className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-plum hover:text-ink">
+          <a href="/" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-plum hover:text-ink">
             <ArrowLeft className="size-4" aria-hidden="true" /> Ana sayfaya dön
           </a>
           <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-plum">Yasal metin</p>
-              <h1 className="mt-5 max-w-5xl font-heading text-[clamp(4.2rem,9vw,8.5rem)] leading-[0.78] tracking-[-0.065em]">Kullanım<br /><span className="ml-[0.65em] italic text-plum">koşulları.</span></h1>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">Yasal metin</p>
+              <h1 className="mt-5 max-w-5xl font-heading text-[clamp(3.4rem,7vw,7rem)] leading-[1.08] tracking-[-0.025em]">Kullanım<br /><span className="ml-[0.65em] italic text-plum">koşulları.</span></h1>
             </div>
-            <div className="border-l border-ink/25 pl-5 text-sm leading-6 text-ink/60">
+            <div className="border-l border-ink/25 pl-5 text-sm leading-6 text-ink/80">
               <p>Yürürlük tarihi</p>
               <p className="font-semibold text-ink">1 Eylül 2026</p>
               <p className="mt-3">Sürüm 1.0</p>
@@ -172,15 +172,15 @@ export default function TermsPage() {
         <div className="mx-auto grid max-w-[1440px] lg:grid-cols-[0.72fr_1.28fr]">
           <aside className="border-b border-ink/10 px-5 py-10 sm:px-8 lg:border-b-0 lg:border-r lg:px-12 lg:py-16" aria-label="İçindekiler">
             <div className="lg:sticky lg:top-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-plum">Bu sayfada</p>
-              <ol className="mt-6 grid gap-2 text-sm text-ink/60 sm:grid-cols-2 lg:grid-cols-1">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-plum">Bu sayfada</p>
+              <ol className="mt-6 grid gap-2 text-sm text-ink/80 sm:grid-cols-2 lg:grid-cols-1">
                 {sections.map((section) => (
                   <li key={section.id}>
                     <a className="flex gap-3 py-1.5 hover:text-plum" href={`#${section.id}`}><span className="font-heading italic text-plum">{section.no}</span>{section.title}</a>
                   </li>
                 ))}
               </ol>
-              <div className="mt-10 flex gap-3 border border-ink/20 bg-sage/65 p-5 text-sm leading-6 text-ink/65">
+              <div className="mt-10 flex gap-3 border border-ink/20 bg-sage/65 p-5 text-sm leading-6 text-ink/80">
                 <CircleAlert className="mt-0.5 size-5 shrink-0 text-plum" aria-hidden="true" />
                 <p>En önemli özet: OMA bir tıbbi tanı aracı değildir; tahminler yaklaşık değerlerdir.</p>
               </div>
@@ -188,7 +188,7 @@ export default function TermsPage() {
           </aside>
 
           <div className="px-5 sm:px-8 lg:px-16">
-            <div className="max-w-3xl py-12 text-lg leading-8 text-ink/70 lg:py-16">
+            <div className="max-w-3xl py-12 text-lg leading-8 text-ink/80 lg:py-16">
               <p>Bu metni olabildiğince açık yazdık. “Sen” OMA’yı kullanan kişiyi, “biz” ise OMA hizmetini sunan tarafı ifade eder.</p>
             </div>
             {sections.map((section) => (
@@ -196,8 +196,8 @@ export default function TermsPage() {
                 <div className="grid gap-5 sm:grid-cols-[52px_1fr]">
                   <span className="font-heading text-3xl italic text-plum">{section.no}</span>
                   <div>
-                    <h2 className="font-heading text-4xl leading-none tracking-[-0.035em] sm:text-5xl">{section.title}</h2>
-                    <div className="mt-6 space-y-5 text-base leading-7 text-ink/68 sm:text-lg sm:leading-8">{section.body}</div>
+                    <h2 className="font-heading text-4xl leading-tight tracking-[-0.025em] sm:text-5xl">{section.title}</h2>
+                    <div className="mt-6 space-y-5 text-base leading-7 text-ink/80 sm:text-lg sm:leading-8">{section.body}</div>
                   </div>
                 </div>
               </article>

@@ -103,7 +103,11 @@
 @layer base {
   * { @apply border-border outline-ring/50; }
   html { scroll-behavior: smooth; }
-  body { @apply bg-background font-sans text-foreground; }
+  body { @apply bg-background font-sans text-foreground; line-height: 1.6; }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+  a:focus-visible { outline: 3px solid var(--plum); outline-offset: 5px; }
+  section[id] { scroll-margin-top: 2rem; }
   ::selection { background: var(--plum); color: white; }
 }
 
