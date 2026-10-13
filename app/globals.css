@@ -28,7 +28,7 @@
   --color-plum: var(--plum);
   --color-sage: var(--sage);
   --font-sans: 'Karla', ui-sans-serif, system-ui, sans-serif;
-  --font-heading: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-heading: 'Karla', ui-sans-serif, system-ui, sans-serif;
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
@@ -52,10 +52,10 @@
 }
 
 :root {
-  --paper: #f5f1e9;
-  --ink: #292427;
-  --plum: #704b70;
-  --sage: #cbd5b7;
+  --paper: #eeece3;
+  --ink: #343e2b;
+  --plum: #596b43;
+  --sage: #dce2ce;
   --background: var(--paper);
   --foreground: var(--ink);
   --card: #faf7f0;
@@ -68,7 +68,7 @@
   --secondary-foreground: var(--ink);
   --muted: #e9e3d8;
   --muted-foreground: #6d6568;
-  --accent: #d7c7d6;
+  --accent: #dce2ce;
   --accent-foreground: var(--ink);
   --destructive: #a94343;
   --border: rgb(41 36 39 / 18%);
@@ -104,7 +104,7 @@
   * { @apply border-border outline-ring/50; }
   html { scroll-behavior: smooth; }
   body { @apply bg-background font-sans text-foreground; line-height: 1.6; }
-  h1, h2, h3 { text-wrap: balance; }
+  h1, h2, h3 { text-wrap: balance; font-weight: 800; }
   p { text-wrap: pretty; }
   a:focus-visible { outline: 3px solid var(--plum); outline-offset: 5px; }
   section[id] { scroll-margin-top: 2rem; }

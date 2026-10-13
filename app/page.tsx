@@ -61,9 +61,9 @@ export default function Home() {
                 <span className="h-px w-12 bg-plum" />
                 Döngü ve iyi yaşam günlüğü
               </p>
-              <h1 className="max-w-4xl font-heading text-[clamp(3.5rem,7.2vw,7rem)] leading-[1.08] tracking-[-0.025em]">
+              <h1 className="max-w-4xl font-heading text-[clamp(3.25rem,6.3vw,6rem)] leading-[1.02] uppercase text-[#7b8c60] tracking-[-0.025em]">
                 Bedeninin<br />
-                <span className="ml-[0.55em] italic text-plum">ritmini</span><br />
+                <span className="text-plum">ritmini</span><br />
                 tanı.
               </h1>
               <p className="mt-10 max-w-xl text-lg leading-8 text-ink/80 sm:text-xl">
@@ -94,8 +94,8 @@ export default function Home() {
                 <Sparkles className="mb-3 size-5" aria-hidden="true" />
                 Döngün, günlük kayıtların ve hızlı erişimlerin aynı ana ekranda.
               </div>
-              <div className="relative w-[min(72vw,310px)] border-[9px] border-ink bg-ink p-1 shadow-[24px_26px_0_0_rgba(72,43,72,0.18)] sm:w-[310px]">
-                <img src="/brand/oma-home-current.png" width="430" height="932" alt="OMA uygulamasının güncel ana ekranı: döngü fazı ve hızlı kayıt seçenekleri" className="h-auto w-full" />
+              <div className="relative w-[min(72vw,310px)] rounded-[2rem] border-[9px] border-[#526934] bg-[#526934] p-1 shadow-[24px_26px_0_0_rgba(79,97,54,0.14)] sm:w-[310px]">
+                <img src="/brand/oma-home-current.png" width="430" height="932" alt="OMA uygulamasının güncel ana ekranı: döngü fazı ve hızlı kayıt seçenekleri" className="h-auto w-full rounded-[1.25rem]" />
               </div>
               <div className="flex w-full max-w-[20rem] self-end items-start gap-3 border-t border-ink/25 pt-4 text-sm leading-6 text-ink/80">
                 <LockKeyhole className="mt-1 size-5 shrink-0" aria-hidden="true" />
@@ -106,14 +106,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-ink/10 bg-[#e9c6bf]" aria-labelledby="approach-title">
+      <section className="border-b border-ink/10 bg-[#e2e6d6]" aria-labelledby="approach-title">
         <div className="mx-auto grid max-w-[1440px] lg:grid-cols-[0.7fr_1.3fr]">
           <div className="border-b border-ink/15 px-5 py-16 sm:px-8 lg:border-b-0 lg:border-r lg:px-12 lg:py-24">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">OMA’nın yaklaşımı</p>
           </div>
           <div className="px-5 py-16 sm:px-8 lg:px-16 lg:py-24">
-            <h2 id="approach-title" className="max-w-4xl font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">
-              Bir veri panosu değil.<br /><span className="italic">Kendine tuttuğun bir günlük.</span>
+            <h2 id="approach-title" className="max-w-4xl font-heading text-4xl leading-[1.12] tracking-[-0.025em] sm:text-6xl">
+              Bir veri panosu değil.<br /><span className="not-italic">Kendine tuttuğun bir günlük.</span>
             </h2>
             <div className="mt-14 grid gap-8 border-t border-ink/20 pt-8 sm:grid-cols-3">
               <p className="text-base leading-7 text-ink/80"><strong className="mb-3 block text-xs uppercase tracking-[0.16em] text-ink">01 · Kaydet</strong>Gününü, bedenini ve döngünü kendi ritminde not et.</p>
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="border-b border-ink/10 px-5 py-16 sm:px-8 lg:border-b-0 lg:border-r lg:px-12 lg:py-24">
             <div className="lg:sticky lg:top-10">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">Birlikte izlenince anlamlı</p>
-              <h2 className="mt-6 max-w-md font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">Beden,<br />tek bir <span className="italic text-plum">veriden</span><br />ibaret değil.</h2>
+              <h2 className="mt-6 max-w-md font-heading text-4xl leading-[1.12] tracking-[-0.025em] sm:text-6xl">Beden,<br />tek bir <span className="not-italic text-plum">veriden</span><br />ibaret değil.</h2>
               <p className="mt-8 max-w-sm text-lg leading-8 text-ink/80">OMA, günlük hayatın farklı parçalarını aynı yerde tutar; yorumlamak için önce bütünü görmene yardım eder.</p>
             </div>
           </div>
@@ -138,9 +138,9 @@ export default function Home() {
               const Icon = feature.icon;
               return (
                 <article key={feature.no} className="grid gap-6 border-b border-ink/10 px-5 py-10 last:border-b-0 sm:grid-cols-[64px_1fr_auto] sm:px-8 lg:px-12 lg:py-14">
-                  <span className="font-heading text-3xl italic text-plum">{feature.no}</span>
+                  <span className="font-heading text-3xl text-plum">{feature.no}</span>
                   <div>
-                    <h3 className="font-heading text-4xl tracking-[-0.035em] sm:text-5xl">{feature.title}</h3>
+                    <h3 className="font-heading text-3xl tracking-[-0.035em] sm:text-4xl">{feature.title}</h3>
                     <p className="mt-4 max-w-2xl text-base leading-7 text-ink/80 sm:text-lg sm:leading-8">{feature.text}</p>
                   </div>
                   <Icon className="size-7 text-plum sm:mt-2" strokeWidth={1.5} aria-hidden="true" />
@@ -151,11 +151,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="ekranlar" className="border-b border-ink/10 bg-[#f0eee6]" aria-labelledby="screens-title">
+      <section id="ekranlar" className="border-b border-ink/10 bg-[#eeece3]" aria-labelledby="screens-title">
         <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">Uygulamanın içinden</p>
-            <h2 id="screens-title" className="mt-5 font-heading text-5xl leading-[1.08] sm:text-7xl">OMA’ya <span className="italic text-plum">yakından bak.</span></h2>
+            <h2 id="screens-title" className="mt-5 font-heading text-4xl leading-[1.12] sm:text-6xl">OMA’ya <span className="not-italic text-plum">yakından bak.</span></h2>
             <p className="mt-6 text-lg leading-8 text-ink/80">Gününe ana ekrandan göz at; döngü takviminde önündeki günleri birlikte gör.</p>
           </div>
           <div className="mx-auto mt-12 grid max-w-[820px] gap-12 sm:grid-cols-2 sm:gap-16">
@@ -164,7 +164,7 @@ export default function Home() {
               { image: 'oma-calendar-current.png', title: 'Takvimde bütünü gör', text: 'Adet günlerini ve tahmini döngü aralıklarını aylar arasında takip et.', alt: 'OMA güncel döngü takviminde Eylül ve Ekim ayları' },
             ].map((screen) => (
               <figure key={screen.image} className="mx-auto w-full max-w-[340px]">
-                <a href={`/brand/${screen.image}`} target="_blank" rel="noreferrer" aria-label={`${screen.title} ekran görüntüsünü büyüt`} className="block rounded-[2rem] border-[7px] border-ink bg-ink p-1 shadow-xl transition-transform hover:-translate-y-1">
+                <a href={`/brand/${screen.image}`} target="_blank" rel="noreferrer" aria-label={`${screen.title} ekran görüntüsünü büyüt`} className="block rounded-[2rem] border-[7px] border-[#526934] bg-[#526934] p-1 shadow-xl transition-transform hover:-translate-y-1">
                   <img src={`/brand/${screen.image}`} width="430" height="932" loading="lazy" alt={screen.alt} className="h-auto w-full rounded-[1.25rem]" />
                 </a>
                 <figcaption className="mt-7">
@@ -179,12 +179,12 @@ export default function Home() {
       </section>
 
       <section className="relative overflow-hidden bg-plum text-white" aria-labelledby="insights-title">
-        <div className="absolute inset-y-0 left-0 w-1/3 bg-[#5f3c60]" />
+        <div className="absolute inset-y-0 left-0 w-1/3 bg-[#50613c]" />
         <div className="relative mx-auto grid min-h-[830px] max-w-[1440px] gap-14 px-5 py-20 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:px-12 lg:py-24">
           <div className="flex flex-col justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sage">İçgörü, hüküm değil</p>
-              <h2 id="insights-title" className="mt-6 max-w-lg font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">Kayıtların sana <span className="italic text-[#e9c6bf]">geri konuşur.</span></h2>
+              <h2 id="insights-title" className="mt-6 max-w-lg font-heading text-4xl leading-[1.12] tracking-[-0.025em] sm:text-6xl">Kayıtların sana <span className="not-italic text-[#e0e6ce]">geri konuşur.</span></h2>
             </div>
             <div className="mt-10 max-w-md border-l border-white/30 pl-5 text-lg leading-8 text-white/90">
               <p>OMA içgörüleri tıbbi tanı değildir. Kayıtlarında birlikte görünen örüntüleri açıklar; endişelendiren veya süren değişikliklerde bir sağlık profesyoneline başvurmanı önerir.</p>
@@ -192,10 +192,10 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 items-start justify-items-center gap-8 sm:grid-cols-2 sm:gap-5">
-            <div className="w-full max-w-[300px] border-[8px] border-ink bg-ink p-1 shadow-[18px_22px_0_rgba(0,0,0,0.18)]">
+            <div className="w-full max-w-[300px] border-[8px] border-ink bg-[#526934] p-1 shadow-[18px_22px_0_rgba(0,0,0,0.18)]">
               <img src="/brand/oma-insight-nutrition.png" width="432" height="856" alt="OMA uygulamasında beslenme içgörüsü" className="h-auto w-full" />
             </div>
-            <div className="w-full max-w-[300px] sm:mt-16 border-[8px] border-ink bg-ink p-1 shadow-[18px_22px_0_rgba(0,0,0,0.18)]">
+            <div className="w-full max-w-[300px] sm:mt-16 border-[8px] border-ink bg-[#526934] p-1 shadow-[18px_22px_0_rgba(0,0,0,0.18)]">
               <img src="/brand/oma-insight-cycle.png" width="432" height="856" alt="OMA uygulamasında döngü içgörüsü" className="h-auto w-full" />
             </div>
           </div>
@@ -208,7 +208,7 @@ export default function Home() {
             <img src="/brand/oma-botanical-gold.jpg" alt="Sarı çiçeklerden oluşan botanik kompozisyon" className="absolute inset-0 size-full object-cover opacity-40 mix-blend-multiply" />
             <div className="relative flex h-full flex-col justify-between gap-32">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-ink/80">Gizlilik, sonradan eklenen bir ayar değil</p>
-              <h2 className="mt-auto max-w-xl bg-paper/95 p-5 font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">Veri senin.<br /><span className="italic text-plum">Kontrol de.</span></h2>
+              <h2 className="mt-auto max-w-xl bg-paper/95 p-5 font-heading text-4xl leading-[1.12] tracking-[-0.025em] sm:text-6xl">Veri senin.<br /><span className="not-italic text-plum">Kontrol de.</span></h2>
             </div>
           </div>
           <div className="flex flex-col justify-center px-5 py-16 sm:px-8 lg:px-16 lg:py-24">
@@ -232,7 +232,7 @@ export default function Home() {
           <div className="grid items-end gap-12 border-y border-ink/20 py-12 lg:grid-cols-[1fr_auto]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">OMA 1.0.5</p>
-              <h2 className="mt-5 max-w-4xl font-heading text-5xl leading-[1.08] tracking-[-0.025em] sm:text-7xl">Kendini dinlemek için<br /><span className="italic text-plum">bugün iyi bir gün.</span></h2>
+              <h2 className="mt-5 max-w-4xl font-heading text-4xl leading-[1.12] tracking-[-0.025em] sm:text-6xl">Kendini dinlemek için<br /><span className="not-italic text-plum">bugün iyi bir gün.</span></h2>
             </div>
             <div className="flex min-w-0 flex-col gap-3">
               <a

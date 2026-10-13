@@ -149,7 +149,7 @@ export default function TermsPage() {
     <main className="min-h-screen bg-paper text-ink">
       <SiteHeader />
 
-      <section className="border-b border-ink/10 bg-[#e9c6bf]">
+      <section className="border-b border-ink/10 bg-[#e2e6d6]">
         <div className="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
           <a href="/" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-plum hover:text-ink">
             <ArrowLeft className="size-4" aria-hidden="true" /> Ana sayfaya dön
@@ -157,7 +157,7 @@ export default function TermsPage() {
           <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-plum">Yasal metin</p>
-              <h1 className="mt-5 max-w-5xl font-heading text-[clamp(3.4rem,7vw,7rem)] leading-[1.08] tracking-[-0.025em]">Kullanım<br /><span className="ml-[0.65em] italic text-plum">koşulları.</span></h1>
+              <h1 className="mt-5 max-w-5xl font-heading text-[clamp(3rem,6.3vw,6rem)] leading-[1.08] tracking-[-0.025em]">Kullanım<br /><span className="text-plum">koşulları.</span></h1>
             </div>
             <div className="border-l border-ink/25 pl-5 text-sm leading-6 text-ink/80">
               <p>Yürürlük tarihi</p>
@@ -176,7 +176,7 @@ export default function TermsPage() {
               <ol className="mt-6 grid gap-2 text-sm text-ink/80 sm:grid-cols-2 lg:grid-cols-1">
                 {sections.map((section) => (
                   <li key={section.id}>
-                    <a className="flex gap-3 py-1.5 hover:text-plum" href={`#${section.id}`}><span className="font-heading italic text-plum">{section.no}</span>{section.title}</a>
+                    <a className="flex gap-3 py-1.5 hover:text-plum" href={`#${section.id}`}><span className="font-heading text-plum">{section.no}</span>{section.title}</a>
                   </li>
                 ))}
               </ol>
@@ -194,7 +194,7 @@ export default function TermsPage() {
             {sections.map((section) => (
               <article id={section.id} key={section.id} className="scroll-mt-6 border-t border-ink/15 py-12 lg:py-16">
                 <div className="grid gap-5 sm:grid-cols-[52px_1fr]">
-                  <span className="font-heading text-3xl italic text-plum">{section.no}</span>
+                  <span className="font-heading text-3xl text-plum">{section.no}</span>
                   <div>
                     <h2 className="font-heading text-4xl leading-tight tracking-[-0.025em] sm:text-5xl">{section.title}</h2>
                     <div className="mt-6 space-y-5 text-base leading-7 text-ink/80 sm:text-lg sm:leading-8">{section.body}</div>

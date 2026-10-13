@@ -9,7 +9,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <a href="/" className="flex items-center gap-3" aria-label="OMA ana sayfa">
           <img src="/brand/oma-logo.png" width="42" height="42" alt="" className="size-10 object-contain" />
-          <span className="font-heading text-[1.9rem] leading-none tracking-[-0.04em]">OMA</span>
+          <span className="font-heading text-[1.9rem] font-extrabold text-plum leading-none tracking-[-0.04em]">OMA</span>
         </a>
 
         <nav className="hidden items-center gap-8 text-sm font-semibold uppercase tracking-[0.14em] md:flex" aria-label="Ana menü">
@@ -38,7 +38,7 @@ export function SiteFooter() {
         <div>
           <a href="/" className="inline-flex items-center gap-3" aria-label="OMA ana sayfa">
             <img src="/brand/oma-logo.png" width="46" height="46" alt="" className="size-11 object-contain brightness-0 invert" />
-            <span className="font-heading text-4xl tracking-[-0.025em]">OMA</span>
+            <span className="font-heading text-4xl font-extrabold tracking-[-0.025em]">OMA</span>
           </a>
           <p className="mt-6 max-w-md text-lg leading-8 text-paper/80">Sağlığını kendi ritminde takip et.</p>
         </div>
